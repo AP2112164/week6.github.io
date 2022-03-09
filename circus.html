@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PW-Burnhams-Circus</title>
+	<link href="main.css" type="text/css" rel="stylesheet" >
+	<link href="bootstrap.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+		
+		<h1>
+			<span class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">Pennywise et. Burnham's</span>
+		</h1>
+		
+	</header>
+	
+	<div id="main" class="container">
+		
+		<div id="welcome">
+			
+			<h2>WELCOME TO THE PENNYWISE et. BURNHAMS CIRCUS</h2>
+			<img  src="clowns.jpg" alt="clown banner" width="700px" height="auto" class="justify-content-center">
+		    <p>Welcome to Pennywise et. Burnhams travelling circus.</p>
+		    <p>We are a travelling circus and we have arrived in Aberdeen for the first time as part our Scotland Entertainment Tour. We are here to entartain people of all ages, espacially the youngest ones. </p>
+			<p>If you would like to follow our entertainment tour in scotland, go to our <a href="https://twitter.com/circusofhorrors?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>   page and follow us.</p>
+		    <p>If you are ready to be entertained by our clowns, please feel free to order your tickets from the table below.</p>
+			
+		</div>
+		
+	 <table class="table">
+      <thead>
+       <tr>
+        <th scope="col">Attendes</th>
+        <th scope="col">Price</th>
+       </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <th scope="row">Infants(below six months)</th>
+       <td>£3.00</td>
+      </tr>
+      <tr>
+       <th scope="row">Children (up to 6 years)</th>
+       <td>£5.00</td>
+      </tr>
+      <tr>
+       <th scope="row">Children (below 12)</th>
+       <td>£8.00</td>
+      </tr>
+	  <tr>
+	   <th scope="row">Young Adults (below 18)</th>
+	   <td>£11.00</td>	
+	  </tr>
+	  <tr>
+       <th scope="row">Adults</th>
+	   <td>£15.00</td>
+	  </tr>
+	  <tr>
+	   <th scope="row">Elderly</th>
+	   <td>£12.00</td>
+	  </tr>
+     </tbody>
+    </table>
+		
+	<a class="btn btn-primary" role="button" id="btn"> Order Tickets </a>
+		
+		<img src="pennywise.gif" alt="pennywise jumpscare" id="spook" width = "100%" style="display: none">
+		
+		<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  			<span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+ 			<img class="modal-content" id="pennywise" alt="jumpscare">
+
+  <!-- Modal Caption (Image Text) -->
+ 	    	<div id="caption"></div>
+		</div>
+		
+		<script>
+		
+			var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var button = document.getElementById("btn");
+			var img = document.getElementById("spook");
+			var modalImg = document.getElementById("pennywise");
+			var captionText = document.getElementById("caption");
+			button.onclick = function(){
+				modal.style.display = "block";
+  				modalImg.src = this.src;
+  				captionText.innerHTML = this.alt;
+			}
+
+			var span = document.getElementsByClassName("close")[0];
+
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+			
+		</script>
+		
+		<div id="tutorial">
+			
+			<h3>HOW TO JUGGLE</h3>
+			<p>Juggling is a skill that is a little bit difficult to learn. Juggling involves hand-eye co-ordination in order for it to look effortless. Here is how you can teach your self to juggle;</p>
+			<ul class="list-group" id="instructions">
+				<li class="list-group-item">Assume the position to juggle: stand with your shoulders in line with your feet and your elbows bent at 90 degrees.  Not too bent, though, or it will become uncomfortable</li>
+				<li class="list-group-item">Start with one ball. Throwing it back and forth between each hand, make sure your throws are consistent in a gentle arc, and go above eye level. <b>TIP start juggling with beanbags or something that won’t roll away when you drop them on the floor</b>.</li>
+				<li class="list-group-item">Start practicing with one ball with your eyes closed. Keep practicing until you can consistently throw one ball in an arch at the same height and the same speed. Remember… Practice makes perfect.</li>
+				<li class="list-group-item">Add another juggling ball into the mix. With one ball in each hand, throw them as before. However, when the first ball peaks, throw the second ball underneath to land in your other hand. Once again. the key to this and every step is practice, practice, practice.   Don’t move onto step 5 until you have mastered this.</li>
+				<li class="list-group-item"> Now it’s time to put a third juggling ball into the mix. Place two juggling balls in your dominant hand and one in the other hand. Throw the juggling balls just as before, but add a third throw right before the second juggling ball comes down. Keep practicing until you can make 5 throws and 5 catches.</li>
+			</ul>
+			
+		</div>
+		
+		<div id="trapeze">
+			<h3>Trapeze Performers</h3>
+			<p>Unfortunatly, our trapeze artists were involved in an accident and they were unable to join us on tour, but you can watch this video instead.</p>
+			<iframe width="800" height="515" src="https://www.youtube.com/embed/m0afnYOHGKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+	</div>
+	
+	<footer class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+		<h4>
+		
+			<span class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none"> Adam Polec © 2022 </span>
+			
+		</h4>
+	</footer>
+</body>
+</html>
